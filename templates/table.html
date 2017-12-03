@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<title>This is my table</title>
+	</head>
+	<body>
+		<p>Row is {{row}}<br>
+		Column is {{column}}</p>
+
+		<table>
+			{% for row_num in range(1, row + 1) %}
+		<tr>
+			{% for column_num in range(1, row + 1) %}
+			<td>{{row_num * column_num}}</td>
+		{% endfor %}
+		</tr>
+	{% endfor %}
+		</table>
+	</body>
+</html>

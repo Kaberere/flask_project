@@ -1,0 +1,14 @@
+<html>
+	<head>
+		<title>Hello, {{name}}</title>
+	</head>
+	<body>
+		{% if name == 'Eve' %}
+			{% for _ in range(number) %}
+				You are beautiful, {{name}} <br>
+			{% endfor %}
+		{% else %}
+		You are not beautiful, {{name}}
+		{% endif %}
+	</body>
+</html>
